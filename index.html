@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- super slide css -->
+    <link rel="stylesheet" href="css/superslides.css" />
+    <!-- carousel css -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <!-- jquery cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- fancybox css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Deb Portfolio</title>
+  </head>
+  <body>
+    <!-- loader -->
+    <div class="loader">
+      <div class="inner"></div>
+    </div>
+
+    <!-- slider -->
+    <div id="slides">
+      <div class="overlay"></div>
+      <!-- slide container -->
+      <div class="slides-container">
+        <img src="img/slide-3-min.jpg" alt="" />
+        <img src="img/slide-4-min.jpg" alt="" />
+        <img src="img/slide-5-min.jpg" alt="" />
+      </div>
+
+      <!-- title -->
+      <div class="titleMessage">
+        <div class="heading">
+          <p class="main">Debasish Das</p>
+          <p class="sub">Web <span class="typed"></span></p>
+        </div>
+      </div>
+
+      <!-- next and back icon -->
+      <nav class="slides-navigation">
+        <a href="#" class="next"></a>
+        <a href="#" class="prev"></a>
+      </nav>
+    </div>
+
+    <!-- navbar -->
+    <nav id="navigation" class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Debasish</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon navbar-toggler-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#stats">Stats</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- about -->
+    <div id="about" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <img
+              src="img/deb-website-photo.jpg"
+              alt="debsish"
+              class="aboutImage"
+            />
+          </div>
+          <div class="col-md-7">
+            <h4>About Me</h4>
+            <p>
+              I'm a full stack Developer for kolkata in West Bengal, India. I
+              have serious passion for UI effects, animations and creating
+              intuitive, dynamic user experiences. Let's make something special.
+            </p>
+            <p>
+              I prefer to work with reacts framework as it helps me to build
+              user interfaces, or UIs. In terms of websites and web application.
+              I use Node Js for backend as its non-blocking, event-driven
+              servers and its single-threaded nature & also it allows me to
+              execute Javascript code outside of the browser.Bootstrap is my
+              second choice.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- technical skill -->
+    <div id="skills" class="skillSection section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h4 id="skills-header">Technical Skill</h4>
+            <p>A Representation Of My Proficiency In Each Skill</p>
+            <div class="owl-carousel owl-theme">
+              <div class="skill">
+                <span class="chart" data-percent="90">
+                  <span class="percent">90</span>
+                  <canvas height="152" width="152"></canvas>
+                </span>
+                <h4>HTML</h4>
+                <p>I use html in every web project</p>
+              </div>
+
+              <div class="skill">
+                <span class="chart" data-percent="85">
+                  <span class="percent">85</span>
+                  <canvas height="152" width="152"></canvas>
+                </span>
+                <h4>CSS</h4>
+                <p>I use Grid and Flexbox for layout</p>
+              </div>
+
+              <div class="skill">
+                <span class="chart" data-percent="85">
+                  <span class="percent">85</span>
+                  <canvas height="152" width="152"></canvas>
+                </span>
+                <h4>Javascript</h4>
+                <p>Javascript is my core language</p>
+              </div>
+
+              <div class="skill">
+                <span class="chart" data-percent="80">
+                  <span class="percent">80</span>
+                  <canvas height="152" width="152"></canvas>
+                </span>
+                <h4>Bootstrap</h4>
+                <p>I use bootstrap to create modern websites</p>
+              </div>
+
+              <div class="skill">
+                <span class="chart" data-percent="75%">
+                  <span class="percent">75%</span>
+                  <canvas height="152" width="152"></canvas>
+                </span>
+                <h4>React</h4>
+                <p>I prefer React for frontend framework</p>
+              </div>
+
+              <div class="skill">
+                <span class="chart" data-percent="75%">
+                  <span class="percent">75%</span>
+                  <canvas height="152" width="152"></canvas>
+                </span>
+                <h4>Node Js</h4>
+                <p>I prefer Node js for backend</p>
+              </div>
+
+              <div class="skill">
+                <span class="chart" data-percent="70%">
+                  <span class="percent">70%</span>
+                  <canvas height="152" width="152"></canvas>
+                </span>
+                <h4>Sass</h4>
+                <p>Sass helps me to write css efficiently</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- stat section -->
+    <div id="stats" class="statsSection section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="squareItem">
+              <div class="squareInnerContainer">
+                <div class="squareIcon">
+                  <i class="fa fa-clock"></i>
+                </div>
+                <div class="squareContent">
+                  <h2 class="counter">2</h2>
+                  <h3>Years & Experience</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="squareItem">
+              <div class="squareInnerContainer">
+                <div class="squareIcon">
+                  <i class="fa fa-user-tie"></i>
+                </div>
+                <div class="squareContent">
+                  <h2 class="counter">10</h2>
+                  <h3>Clients</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="squareItem">
+              <div class="squareInnerContainer">
+                <div class="squareIcon">
+                  <i class="fa fa-calendar-alt"></i>
+                </div>
+                <div class="squareContent">
+                  <h2 class="counter">3500</h2>
+                  <h3>Hours Worked</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="squareItem">
+              <div class="squareInnerContainer">
+                <div class="squareIcon">
+                  <i class="fa fa-layer-group"></i>
+                </div>
+                <div class="squareContent">
+                  <h2 class="counter">35</h2>
+                  <h3>Project Completed</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact section -->
+    <div id="contact" class="contactSection section">
+      <div class="col-md-12 text-center">
+        <p class="subHeading">Like what you see</p>
+        <h2>I would love hear from you</h2>
+        <a href="mailTo:debasish7044200115@gmail.com" class="contactButton"
+          >Get In Touch</a
+        >
+      </div>
+    </div>
+
+    <div id="portfolio" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="heading">
+            <h2>PORTFOLIO</h2>
+          </div>
+
+          <div class="filter">
+            <ul id="filters">
+              <li data-filter="all" class="list current">ALL</li>
+              <li data-filter=".app" class="list">APP</li>
+              <!-- <li data-filter="me" class="list">Me</li> -->
+              <li data-filter=".website" class="list">Websites</li>
+            </ul>
+          </div>
+
+          <div class="itemsContainer">
+            <ul class="items">
+              <li class="mix website all">
+                <img src="img/portfolio/hotel.jpg" />
+                <div class="icons">
+                  <a
+                    href="img/portfolio/hotel.jpg"
+                    title="View image"
+                    class="openButton"
+                    data-fancybox="gallery"
+                    data-caption="This is Hotel website"
+                  >
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="" target="_blank" class="projectLink">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+                <div class="imageOverlay"></div>
+              </li>
+
+              <li class="mix website all">
+                <img src="img/portfolio/edgeledger.jpg" />
+                <div class="icons">
+                  <a
+                    href="img/portfolio/edgeledger.jpg"
+                    title="View image"
+                    class="openButton"
+                    data-fancybox="gallery"
+                    data-caption="Edgeledger website"
+                  >
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="" target="_blank" class="projectLink">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+                <div class="imageOverlay"></div>
+              </li>
+              <li class="mix website all">
+                <img src="img/portfolio/natours-full-image.JPG" />
+                <div class="icons">
+                  <a
+                    href="img/portfolio/natours-full-image.JPG"
+                    title="View image"
+                    class="openButton"
+                    data-fancybox="gallery"
+                    data-caption="Natours Website"
+                  >
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="" target="_blank" class="projectLink">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+                <div class="imageOverlay"></div>
+              </li>
+
+              <li class="mix website all">
+                <div class="item app all">
+                  <img src="img/portfolio/trillo-thumbnail.png" />
+                  <div class="icons">
+                    <a
+                      href="img/portfolio/trillo-thumbnail.png"
+                      title="View image"
+                      class="openButton"
+                      data-fancybox="gallery"
+                      data-caption="Trillo Website"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+                    <a href="" target="_blank" class="projectLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="imageOverlay"></div>
+              </li>
+
+              <li class="mix website all">
+                <img src="img/portfolio/nexter-thumbnail.png" />
+                <div class="icons">
+                  <a
+                    href="img/portfolio/nexter-thumbnail.png"
+                    title="View image"
+                    class="openButton"
+                    data-fancybox="gallery"
+                    data-caption="Nexter Website"
+                  >
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="" target="_blank" class="projectLink">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+                <div class="imageOverlay"></div>
+              </li>
+
+              <li class="mix website all">
+                <img src="img/portfolio/solo.jpg " />
+                <div class="icons">
+                  <a
+                    href="img/portfolio/solo.jpg"
+                    title="View image"
+                    class="openButton"
+                    data-fancybox="gallery"
+                    data-caption="solo website"
+                  >
+                    <i class="fa fa-search"></i>
+                  </a>
+
+                  <a href="" target="_blank" class="projectLink">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+                <div class="imageOverlay"></div>
+              </li>
+
+              <li class="mix app all">
+                <img src="img/portfolio/sockt.png" />
+                <div class="icons">
+                  <a
+                    href="img/portfolio/sockt.png"
+                    title="View image"
+                    class="openButton"
+                    data-fancybox="gallery"
+                    data-caption="Socket chat web app"
+                  >
+                    <i class="fa fa-search"></i>
+                  </a>
+
+                  <a href="" target="_blank" class="projectLink">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+                <div class="imageOverlay"></div>
+              </li>
+
+              <li class="mix app all">
+                <img src="img/portfolio/todo-full-image.png" />
+                <div class="icons">
+                  <a
+                    href="img/portfolio/todo-full-image.png"
+                    title="View image"
+                    class="openButton"
+                    data-fancybox="gallery"
+                    data-caption="Todo List"
+                  >
+                    <i class="fa fa-search"></i>
+                  </a>
+
+                  <a href="" target="_blank" class="projectLink">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+                <div class="imageOverlay"></div>
+              </li>
+
+              <li class="mix app all">
+                <img src="img/portfolio/youtube-clone.png" />
+                <div class="icons">
+                  <a
+                    href="img/portfolio/youtube-clone.png"
+                    title="View image"
+                    class="openButton"
+                    data-fancybox="gallery"
+                    data-caption="Youtube Clone"
+                  >
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="" target="_blank" class="projectLink">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+                <div class="imageOverlay"></div>
+              </li>
+
+              <li class="mix app all">
+                <img src="img/portfolio/image-search.png" />
+                <div class="icons">
+                  <a
+                    href="img/portfolio/image-search.png"
+                    title="View image"
+                    class="openButton"
+                    data-fancybox="gallery"
+                    data-caption="Image-search web app"
+                  >
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="" target="_blank" class="projectLink">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+                <div class="imageOverlay"></div>
+              </li>
+
+              <li class="mix app all">
+                <img src="img/portfolio/weather.png" />
+                <div class="icons">
+                  <a
+                    href="img/portfolio/weather.png"
+                    title="View image"
+                    class="openButton"
+                    data-fancybox="gallery"
+                    data-caption="Weather App"
+                  >
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="" target="_blank" class="projectLink">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+                <div class="imageOverlay"></div>
+              </li>
+
+              <li class="mix app all">
+                <img src="img/portfolio/me.jpg" />
+                <div>
+                  <div class="icons">
+                    <a
+                      href="img/portfolio/me.jpg"
+                      title="View image"
+                      class="openButton"
+                      data-fancybox="gallery"
+                      data-caption="Portfolio"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+                    <a href="" target="_blank" class="projectLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="col-md-12 copyright text-center">
+      <p>&copy; Debasish Das 2021</p>
+    </div> -->
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-info">
+          <div>
+            <i class="fas fa-envelope fa-2x"></i>
+            <h3>Email</h3>
+            <p>debasish7044200115@gmail.com</p>
+          </div>
+          <div>
+            <i class="fas fa-phone fa-2x"></i>
+            <h3>Phone</h3>
+            <p>7044200115</p>
+          </div>
+          <div>
+            <i class="fas fa-address-card fa-2x"></i>
+            <h3>Address</h3>
+            <p>180B Harrish Mukherjee Road kol-700026</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-content">
+      <div class="container">
+        <p>Copyrights © 2021 All Rights Reserved</p>
+        <div class="social">
+          <a
+            href="https://twitter.com/debasis41538509"
+            target="blank"
+            class="fab fa-twitter"
+          ></a>
+          <a
+            href="https://www.facebook.com/debasishd101/"
+            target="blank"
+            class="fab fa-facebook"
+          >
+          </a>
+          <a
+            href="https://www.instagram.com/debasishdaskobi/"
+            target="blank"
+            class="fab fa-instagram"
+          ></a>
+          <a
+            href="https://github.com/debasish7044?tab=repositories"
+            target="blank"
+            class="fab fa-github"
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- carousel min js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- typed min js -->
+    <script src="js/typed.min.js"></script>
+    <!-- pie chart min js -->
+    <script src="js/jquery.easypiechart.min.js"></script>
+
+    <!-- super slide jquery -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/countUp-jquery.js"></script>
+    <script src="js/countUp.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- mixit up  js script -->
+    <script src="js/mixitup.min.js"></script>
+
+    <!-- famcybox jquery -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

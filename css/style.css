@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* font-family: 'Montserrat', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  letter-spacing: 1px;
+  color: #000;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  background: #fff;
+}
+.inner {
+  background: url('../img/preloader.gif') no-repeat center center/cover;
+
+  height: 100px;
+  width: 100px;
+}
+
+.slides-navigation .prev,
+.slides-navigation .next {
+  width: 3rem;
+  height: 3rem;
+  z-index: 10;
+}
+
+nav.slides-navigation {
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slides-navigation .prev {
+  background: url(../img/icon/back-arrow.png) no-repeat center center/cover;
+}
+
+.slides-navigation .next {
+  background: url(../img/icon/right-arrow.png) no-repeat center center/cover;
+}
+
+.slides-navigation a.prev {
+  left: 2.1rem;
+}
+.slides-navigation a.next {
+  right: 2.1rem;
+}
+
+.overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+#slides .titleMessage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  z-index: 5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+#slides .titleMessage .heading {
+  display: flex;
+  justify-content: center;
+  /* width: 100%; */
+  /* height: 100%; */
+  flex-direction: column;
+  align-items: center;
+}
+
+#slides .titleMessage .heading p.main {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 5px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1px;
+  position: static;
+}
+
+#slides .titleMessage p.sub {
+  font-size: 1.3rem;
+  font-family: 'Montserrat';
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+
+/* about section */
+
+.section {
+  padding: 6rem 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.aboutImage {
+  border-radius: 5px;
+}
+
+#about h4 {
+  font-size: 2rem;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+#about p {
+  font-size: 0.9rem;
+  font-family: 'Montserrat';
+}
+
+/* skill section */
+
+.skillSection,
+.contactSection {
+  background: #3c4149;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-weight: 300;
+}
+
+#skills-header {
+  font-size: 2rem;
+}
+
+.skillSection h4 {
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+/* carousel */
+
+.owl-carousel {
+  color: #fff;
+  margin-top: 2.5rem;
+}
+
+.skill {
+  text-align: center;
+}
+.chart {
+  position: relative;
+  width: 152px;
+  height: 152px;
+  display: inline-block;
+  text-align: center;
+}
+
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 152px;
+  width: 152px;
+}
+
+.chart .percent {
+  font-size: 35px;
+  line-height: 152px;
+  text-align: center;
+}
+
+.chart .percent::after {
+  content: '%';
+}
+
+#about .section {
+  padding: 3rem;
+}
+
+.squareItem {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.squareInnerContainer {
+  position: relative;
+  border: 2px solid #3c4149;
+  text-align: center;
+  border-top: none;
+  height: 250px;
+  width: 100%;
+}
+
+.squareInnerContainer:before {
+  content: '';
+  width: 33%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #3c4149;
+}
+
+.squareInnerContainer:after {
+  content: '';
+  width: 33%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid #3c4149;
+}
+
+.squareContent {
+  height: 250px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.squareContent h3 {
+  font-size: 0.8rem;
+  font-family: 'Montserrat';
+  color: #3c4149;
+}
+
+.squareContent h2 {
+  font-size: 2.5rem;
+  font-family: 'Montserrat';
+  color: #3c4149;
+}
+
+#stats .squareIcon {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  font-size: 2.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -25px;
+  left: 50%;
+  margin-left: -25px;
+}
+
+/* contact section */
+p.subHeading {
+  font-family: 'Montserrat';
+  font-weight: 200;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+}
+
+#contact h2 {
+  font-family: 'Montserrat';
+  font-weight: 200;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+a.contactButton {
+  padding: 0.8rem 0.6rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 400;
+  border: 1px solid;
+}
+
+a.contactButton:hover {
+  background: #eee;
+  color: #3c4149;
+}
+
+/* portfolio section */
+
+#portfolio h2 {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.heading.text-center {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: -0.7rem;
+  font-family: 'Montserrat';
+  font-weight: 100;
+}
+
+ul#filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 3rem;
+
+  height: 3rem;
+}
+
+.filter #filters li {
+  list-style: none;
+  text-decoration: none;
+  color: #3c4149;
+  padding: 0.8rem 0.6rem;
+  margin-right: 0.8rem;
+  border: 1px solid #3c4149;
+  font-family: 'Montserrat';
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.filter #filters .current,
+.filter #filters a:hover {
+  background: #3c4149;
+  color: #fff;
+}
+
+#portfolio ul.items {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.2rem;
+  position: relative;
+  position: static;
+  overflow: hidden;
+  width: 100%;
+}
+
+.mix {
+  position: relative;
+  border: 1px solid #3c41492d;
+  cursor: pointer;
+}
+
+.openButton,
+.projectLink {
+  color: #fff;
+  background: #3c4149;
+  margin: 5px;
+  padding: 0.4rem;
+  font-size: 0.8rem;
+  border-radius: 2px;
+}
+
+a.openButton:hover,
+a.projectLink:hover {
+  background: #31353b;
+  color: #fff;
+}
+
+#portfolio img {
+  width: 100%;
+}
+
+.icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 92px;
+  margin: -15px 0 0 -48px;
+  text-align: center;
+}
+
+a.openButton {
+  left: -5rem;
+  position: relative;
+  opacity: 0;
+  transition: 0.4s all ease;
+}
+
+a.projectLink {
+  position: relative;
+  right: -5rem;
+  opacity: 0;
+  transition: 0.4s all ease;
+}
+
+.imageOverlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.4s all ease;
+}
+
+.mix:hover a.openButton {
+  opacity: 1;
+  left: 0;
+  z-index: 1;
+}
+
+.mix:hover a.projectLink {
+  opacity: 1;
+  right: 0;
+  z-index: 1;
+}
+
+.items .mix:hover .imageOverlay {
+  opacity: 1;
+}
+
+ul.items {
+  padding: 0;
+}
+/* copyright */
+
+.copyright {
+  background: #3c4149;
+  color: #fff;
+  padding: 2rem 5px;
+}
+
+.copyright p {
+  margin: 0;
+}
+
+/* navbar */
+nav#navigation {
+  background: #585e66;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  z-index: 200;
+  padding: 1.5rem;
+  text-transform: uppercase;
+}
+
+#navigation li a {
+  color: #fff;
+}
+
+#navigation .navbar-brand {
+  color: #fff;
+  font-weight: 300;
+}
+
+.navbar-toggler-close {
+  background: url('../img/close.png') no-repeat center center/cover;
+  height: 1.2rem;
+  width: 1.2rem;
+  padding: 1rem;
+  z-index: 2;
+  font-size: 2rem;
+}
+
+.navbar-toggler-menu {
+  background: url('../img/menu.png') no-repeat center center/cover;
+  height: 1rem;
+  width: 1rem;
+  padding: 1rem;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.​navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.fixedNav #navigation {
+  width: 100%;
+  padding: 1.5rem;
+  position: fixed;
+  top: 0;
+}
+
+#contact {
+  background: #3c4149;
+  text-align: center;
+}
+
+#contact .contact-info {
+  font-family: 'Montserrat', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.2rem;
+  padding: 2rem 0;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 200;
+}
+
+#contact .contact-info h3 {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.footer-content {
+  background: #3c4149;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-content .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  color: #fff;
+}
+
+.footer-content .container .social a {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 0.8rem;
+  margin-right: 1rem;
+}
+
+.footer-content .container .social a:hover {
+  background: #fff;
+  color: #3c4149;
+}
+
+/* ======================== Media Query (992px)===================== */
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+
+  img.aboutImage {
+    margin-bottom: 2rem;
+  }
+
+  .fancybox-image,
+  .fancybox-spaceball {
+    padding: 2rem;
+  }
+
+  #stats .squareIcon {
+    font-size: 2.9rem;
+  }
+
+  #stats .container .row .col-md-3:nth-child(-n + 2) > .squareItem {
+    margin-bottom: 4rem;
+  }
+}
+
+/* ======================== Media Query (768px) ======================== */
+@media (max-width: 768px) {
+  #portfolio ul.items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  #portfolio ul.items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #slides .titleMessage .heading p.main {
+    font-size: 2.5rem;
+  }
+
+  nav.slides-navigation {
+    display: none;
+  }
+  #about {
+    padding: 6rem 3rem;
+  }
+
+  #stats .container .row .col-md-3:nth-child(-n + 3) > .squareItem {
+    margin-bottom: 4rem;
+  }
+
+  .squareItem {
+    padding: 0 3rem;
+  }
+
+  #stats .squareIcon {
+    font-size: 3.5rem;
+  }
+
+  .itemsContainer {
+    padding: 0 3rem;
+  }
+
+  .fancybox-image,
+  .fancybox-spaceball {
+    padding: 2rem 4rem;
+  }
+
+  #contact .contact-info {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-content .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-content p {
+    margin-bottom: 1rem;
+  }
+}
